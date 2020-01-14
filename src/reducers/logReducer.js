@@ -1,7 +1,8 @@
 import {
   GET_LOGS,
   SET_LOADING,
-  LOGS_ERROR
+  LOGS_ERROR,
+  ADD_LOG
 } from '../actions/types'
 
 const initialState = {
@@ -17,13 +18,16 @@ export default (state = initialState, action) => {
 
   switch (action.type) {
     case GET_LOGS:
-      console.log(action.payload.data);
-      console.log("Hello from reducer logs");
-
-
       return {
         ...state,
         logs: action.payload,
+        loading: false
+      }
+
+    case ADD_LOG:
+      return {
+        ...state,
+        logs: [...state.logs, action.payload],
         loading: false
       }
 

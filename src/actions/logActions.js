@@ -41,6 +41,39 @@ export const getLogs = () => async dispatch => {
     })
 
   }
+}
+
+
+// Problem with FETCH API
+export const addLog = (log) => async dispatch => {
+  try {
+    setLoading();
+
+    const inputData = log;
+
+    const res = fetch('logs', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(inputData),
+    });
+
+    const data = await res.json();
+
+    dispatch({
+      type: GET_LOGS,
+      payload: data
+    });
+
+  } catch (err) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: err.response.data
+    })
+  }
+
+
 
 }
 
