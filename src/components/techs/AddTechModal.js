@@ -5,7 +5,7 @@ function AddTechModal() {
   //State
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [tech, setTech] = useState('');
+  // const [tech, setTech] = useState('');
 
 
 

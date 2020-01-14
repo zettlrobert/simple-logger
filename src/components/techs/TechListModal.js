@@ -28,9 +28,7 @@ const TechListModal = () => {
         <h4>Technician List</h4>
         <ul className="collection">
           {!loading && techs.map(tech => (
-            <li className="collection-item">
-              <TechItem tech={tech} key={tech.id} />
-            </li>
+            <TechItem tech={tech} key={tech.id} />
           ))}
         </ul>
       </div>

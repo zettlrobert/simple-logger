@@ -13,8 +13,14 @@ const initialState = {
 
 
 export default (state = initialState, action) => {
-  switch (action) {
+  // !!! .type !!! <-- Don't forget eacht ime
+
+  switch (action.type) {
     case GET_LOGS:
+      console.log(action.payload.data);
+      console.log("Hello from reducer logs");
+
+
       return {
         ...state,
         logs: action.payload,
