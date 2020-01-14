@@ -19,7 +19,7 @@
       "attentioin": false,
       "date": "01-14-2020",
       "tech": "Robert Zettl"
-    },
+    }
   ],
   "techs": [{
       "id": "1",
@@ -35,6 +35,6 @@
       "id": "3",
       "firstName": "Sam",
       "lastName": "Samson"
-    },
+    }
   ]
 }
