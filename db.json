@@ -1,29 +1,27 @@
 {
-  "logs": [
-    {
+  "logs": [{
       "id": 1,
       "message": "Changed Network Password",
-      "attentioin": false,
+      "attention": false,
       "date": "01-14-2020",
       "tech": "Sam Samson"
     },
     {
       "id": 2,
       "message": "Workstation 3 down",
-      "attentioin": true,
+      "attention": true,
       "date": "01-14-2020",
       "tech": "Hanna Smith"
     },
     {
       "id": 3,
       "message": "Installed new Network Card Workstation 1",
-      "attentioin": false,
+      "attention": false,
       "date": "01-14-2020",
       "tech": "Robert Zettl"
     }
   ],
-  "techs": [
-    {
+  "techs": [{
       "id": "1",
       "firstName": "Robert",
       "lastName": "Zettl"
