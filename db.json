@@ -1,6 +1,5 @@
 {
-  "logs": [
-    {
+  "logs": [{
       "id": 1,
       "message": "Changed Network Password",
       "attention": false,
@@ -20,38 +19,9 @@
       "attention": false,
       "date": "01-14-2020",
       "tech": "Robert Zettl"
-    },
-    {
-      "message": "test",
-      "attention": false,
-      "tech": "Samuel San",
-      "date": "2020-01-14T17:26:12.948Z",
-      "id": 4
-    },
-    {
-      "message": "please",
-      "attention": false,
-      "tech": "Sara William",
-      "date": "2020-01-14T17:26:41.987Z",
-      "id": 5
-    },
-    {
-      "message": "srsr",
-      "attention": false,
-      "tech": "Samuel San",
-      "date": "2020-01-14T17:27:35.156Z",
-      "id": 6
-    },
-    {
-      "message": "adsfasdfasdfasdf",
-      "attention": false,
-      "tech": "Rebecca Arc",
-      "date": "2020-01-14T17:29:00.205Z",
-      "id": 7
     }
   ],
-  "techs": [
-    {
+  "techs": [{
       "id": "1",
       "firstName": "Robert",
       "lastName": "Zettl"

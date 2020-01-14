@@ -1,7 +1,9 @@
 import {
   GET_LOGS,
   SET_LOADING,
-  LOGS_ERROR
+  LOGS_ERROR,
+  ADD_LOG,
+
 } from './types'
 
 
@@ -45,24 +47,22 @@ export const getLogs = () => async dispatch => {
 
 
 // Problem with FETCH API
-export const addLog = (log) => async dispatch => {
+export const addLog = log => async dispatch => {
   try {
     setLoading();
 
-    const inputData = log;
-
-    const res = fetch('logs', {
+    const res = await fetch('logs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(inputData),
+      body: JSON.stringify(log),
     });
 
     const data = await res.json();
 
     dispatch({
-      type: GET_LOGS,
+      type: ADD_LOG,
       payload: data
     });
 
