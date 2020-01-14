@@ -1,5 +1,6 @@
 {
-  "logs": [{
+  "logs": [
+    {
       "id": 1,
       "message": "Changed Network Password",
       "attentioin": false,
@@ -21,7 +22,8 @@
       "tech": "Robert Zettl"
     }
   ],
-  "techs": [{
+  "techs": [
+    {
       "id": "1",
       "firstName": "Robert",
       "lastName": "Zettl"
@@ -35,6 +37,11 @@
       "id": "3",
       "firstName": "Sam",
       "lastName": "Samson"
+    },
+    {
+      "firstName": "Diana",
+      "lastName": "Pisa",
+      "id": "xla7Fu6"
     }
   ]
 }
