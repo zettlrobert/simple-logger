@@ -4,6 +4,10 @@ File db.json
 
 ## Dev Dependencies
 
-- Materialize
 - json-server
 - concurrently
+
+## Dependencies
+
+- Material Icons
+- Materialize
