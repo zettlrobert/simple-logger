@@ -7,7 +7,8 @@ import {
   UPDATE_LOG,
   SEARCH_LOGS,
   SET_CURRENT,
-  CLEAR_CURRENT
+  CLEAR_CURRENT,
+  DELETE_TECH
 } from '../actions/types'
 
 const initialState = {

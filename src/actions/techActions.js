@@ -25,7 +25,7 @@ export const getTechs = () => async dispatch => {
   } catch (err) {
     dispatch({
       type: TECHS_ERROR,
-      payload: err.response.statusText
+      payload: err.response
     })
   }
 }
@@ -48,6 +48,29 @@ export const addTech = (tech) => async dispatch => {
     dispatch({
       type: ADD_TECH,
       payload: data
+    })
+
+  } catch (err) {
+    dispatch({
+      type: TECHS_ERROR,
+      payload: err.response
+    })
+  }
+}
+
+
+// Delete Tech from Server
+export const deleteTech = id => async dispatch => {
+  try {
+    setLoading();
+
+    await fetch(`/techs/${id}`, {
+      method: 'DELETE'
+    });
+
+    dispatch({
+      type: DELETE_TECH,
+      payload: id
     })
 
   } catch (err) {
