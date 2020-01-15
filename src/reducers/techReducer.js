@@ -23,11 +23,26 @@ export default (state = initialState, action) => {
         loading: false
       };
 
+    case ADD_TECH:
+      return {
+        ...state,
+        techs: [...state, action.payload],
+        loading: false
+      }
+
     case SET_LOADING:
       return {
         ...state,
         loading: true
       };
+
+    case TECHS_ERROR:
+      console.error(action.payload);
+      return {
+        ...state,
+        error: state.payload,
+        loading: false
+      }
 
     default:
       return state

@@ -10,7 +10,6 @@ import {
 
 
 // Get techs from server
-// Refactored, get logs from Server
 export const getTechs = () => async dispatch => {
   try {
     setLoading();
@@ -27,6 +26,34 @@ export const getTechs = () => async dispatch => {
     dispatch({
       type: TECHS_ERROR,
       payload: err.response.statusText
+    })
+  }
+}
+
+
+// Add Tech to Server
+export const addTech = (tech) => async dispatch => {
+  try {
+    setLoading();
+
+    const res = await fetch('/techs', {
+      method: 'POST',
+      body: JSON.stringify(tech),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const data = await res.json();
+
+    dispatch({
+      type: ADD_TECH,
+      payload: data
+    })
+
+  } catch (err) {
+    dispatch({
+      type: TECHS_ERROR,
+      payload: err.response
     })
   }
 }
