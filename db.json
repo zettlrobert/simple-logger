@@ -1,11 +1,11 @@
 {
   "logs": [
     {
-      "message": "Alles klar, vielen Dank.",
-      "attention": true,
-      "tech": "Rebecca Arc",
-      "date": "2020-01-15T11:33:30.423Z",
-      "id": 1
+      "id": 1,
+      "message": "really?",
+      "attention": false,
+      "tech": "Samuel San",
+      "date": "2020-01-15T12:34:06.390Z"
     }
   ],
   "techs": [
