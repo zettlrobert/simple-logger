@@ -1,27 +1,15 @@
 {
-  "logs": [{
-      "id": 1,
-      "message": "Changed Network Password",
-      "attention": false,
-      "date": "01-14-2020",
-      "tech": "Sam Samson"
-    },
+  "logs": [
     {
-      "id": 2,
-      "message": "Workstation 3 down",
-      "attention": true,
-      "date": "01-14-2020",
-      "tech": "Hanna Smith"
-    },
-    {
-      "id": 3,
-      "message": "Installed new Network Card Workstation 1",
+      "message": "Guten Morgen Sonnenschein",
       "attention": false,
-      "date": "01-14-2020",
-      "tech": "Robert Zettl"
+      "tech": "Rebecca Arc",
+      "date": "2020-01-15T10:32:04.826Z",
+      "id": 1
     }
   ],
-  "techs": [{
+  "techs": [
+    {
       "id": "1",
       "firstName": "Robert",
       "lastName": "Zettl"
