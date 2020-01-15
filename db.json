@@ -1,10 +1,10 @@
 {
   "logs": [
     {
-      "message": "Guten Morgen Sonnenschein",
-      "attention": false,
+      "message": "Alles klar, vielen Dank.",
+      "attention": true,
       "tech": "Rebecca Arc",
-      "date": "2020-01-15T10:32:04.826Z",
+      "date": "2020-01-15T11:33:30.423Z",
       "id": 1
     }
   ],
