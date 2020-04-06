@@ -1,3 +1,9 @@
+# simple-logger
+
+![cover](docs/cover.png)
+
+ A simple Logger Application - using Redux 
+
 ## Devbackend with json-server
 
 File db.json

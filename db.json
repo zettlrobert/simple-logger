@@ -1,18 +1,11 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "really?",
-      "attention": false,
-      "tech": "Samuel San",
-      "date": "2020-01-15T12:34:06.390Z"
-    },
-    {
-      "message": "Alles klar, vielen Dank.",
-      "attention": false,
-      "tech": "Rebecca Arc",
-      "date": "2020-01-15T12:44:37.717Z",
-      "id": 2
+      "message": "Hello for Portfolio",
+      "attention": true,
+      "tech": "Robert Zettl",
+      "date": "2020-04-05T23:03:07.187Z",
+      "id": 1
     }
   ],
   "techs": [
